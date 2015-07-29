@@ -31,8 +31,7 @@ class ApplicationController < ActionController::Base
     m.caption = params['caption']
     m.title =params['title']
     m.save
-    
-    redirect_to "/movie/#{s.id}"
+     redirect_to "/movie/#{m.id}"
   end
   
   def delete
